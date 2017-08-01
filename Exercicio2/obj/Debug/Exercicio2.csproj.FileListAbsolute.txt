@@ -1,0 +1,16 @@
+E:\Aluno\Documents\Visual Studio 2015\Projects\Exercicio2\Exercicio2\bin\Debug\Exercicio2.exe.config
+E:\IF SUDESTE MG\Aulas 2017\Topicos BSI\ExerciciosAvaliativos\Exercicio2\Exercicio2\bin\Debug\Exercicio2.exe.config
+E:\IF SUDESTE MG\Aulas 2017\Topicos BSI\ExerciciosAvaliativos\Exercicio2\Exercicio2\bin\Debug\Exercicio2.exe
+E:\IF SUDESTE MG\Aulas 2017\Topicos BSI\ExerciciosAvaliativos\Exercicio2\Exercicio2\bin\Debug\Exercicio2.pdb
+E:\IF SUDESTE MG\Aulas 2017\Topicos BSI\ExerciciosAvaliativos\Exercicio2\Exercicio2\obj\Debug\Exercicio2.csprojResolveAssemblyReference.cache
+E:\IF SUDESTE MG\Aulas 2017\Topicos BSI\ExerciciosAvaliativos\Exercicio2\Exercicio2\obj\Debug\Exercicio2.exe
+E:\IF SUDESTE MG\Aulas 2017\Topicos BSI\ExerciciosAvaliativos\Exercicio2\Exercicio2\obj\Debug\Exercicio2.pdb
+E:\Aluno\Desktop\Trabalho2C#\Exercicio2\bin\Debug\Exercicio2.exe.config
+E:\Aluno\Desktop\Trabalho2C#\Exercicio2\obj\Debug\Exercicio2.exe
+E:\Aluno\Desktop\Trabalho2C#\Exercicio2\obj\Debug\Exercicio2.pdb
+C:\Users\Aluno\Source\Repos\TrabalhoFinalC-\Exercicio2\bin\Debug\Exercicio2.exe.config
+C:\Users\Aluno\Source\Repos\TrabalhoFinalC-\Exercicio2\obj\Debug\Exercicio2.exe
+C:\Users\Aluno\Source\Repos\TrabalhoFinalC-\Exercicio2\obj\Debug\Exercicio2.pdb
+C:\Users\Aluno\Source\Repos\TrabalhoFinalC-\Exercicio2\bin\Debug\Exercicio2.exe
+C:\Users\Aluno\Source\Repos\TrabalhoFinalC-\Exercicio2\bin\Debug\Exercicio2.pdb
+C:\Users\Aluno\Source\Repos\TrabalhoFinalC-\Exercicio2\obj\Debug\Exercicio2.csprojResolveAssemblyReference.cache

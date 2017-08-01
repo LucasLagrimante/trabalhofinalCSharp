@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Exercicio2.Departamento">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAACAEAAAA=</HashCode>
+      <FileName>Departamento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Gerente" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Exercicio2.Dependente">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Empregado" Type="Exercicio2.Empregado">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.077" Y="0.143" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABgAAAgAAAAAAAAAEAAAAAAAAAAAEABAA=</HashCode>
+      <FileName>Dependente.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Empregado" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Exercicio2.Empregado">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Departamento" Type="Exercicio2.Departamento">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.043" Y="0.043" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAABgAAEgAAAAAAAQAAAAAAAAAAAAAEAEAA=</HashCode>
+      <FileName>Empregado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Departamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Exercicio2.Empresa">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Departamentos" Type="Exercicio2.Departamento" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="3.438" />
+        <Point X="3.479" Y="3.437" Type="JumpStart" />
+        <Point X="3.646" Y="3.438" Type="JumpEnd" />
+        <Point X="6" Y="3.438" />
+        <Point X="6" Y="2.949" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="2.635" Y="0.252" Height="0.182" Width="1.327" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Dependentes" Type="Exercicio2.Dependente" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.75" Y="4.353" />
+        <Point X="0.75" Y="6.073" />
+        <Point X="11.5" Y="6.073" />
+        <Point X="11.5" Y="3.276" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="9.627" Y="2.535" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Empregados" Type="Exercicio2.Empregado" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="3.812" />
+        <Point X="3.479" Y="3.812" Type="JumpStart" />
+        <Point X="3.646" Y="3.812" Type="JumpEnd" />
+        <Point X="8.354" Y="3.812" Type="JumpStart" />
+        <Point X="8.521" Y="3.812" Type="JumpEnd" />
+        <Point X="8.938" Y="3.812" />
+        <Point X="8.938" Y="3.468" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="5.91" Y="0.127" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Projetos" Type="Exercicio2.Projeto" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.938" Y="3.25" />
+        <Point X="0.938" Y="1.696" />
+        <Point X="2.5" Y="1.696" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.718" Y="-1.473" Height="0.182" Width="0.745" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Trabalhos" Type="Exercicio2.TrabalhaEm" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.688" Y="4.353" />
+        <Point X="1.688" Y="5.312" />
+        <Point X="5" Y="5.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.385" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAIAAAIAA=</HashCode>
+      <FileName>Empresa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Departamentos" />
+      <Property Name="Dependentes" />
+      <Property Name="Empregados" />
+      <Property Name="Projetos" />
+      <Property Name="Trabalhos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Exercicio2.Projeto">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAABAAAAAAAAAAAAAACAAAABA=</HashCode>
+      <FileName>Projeto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Departamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Exercicio2.TrabalhaEm">
+    <Position X="5" Y="4" Width="1.5" />
+    <AssociationLine Name="Projeto" Type="Exercicio2.Projeto" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="4.562" />
+        <Point X="3.562" Y="4.562" />
+        <Point X="3.562" Y="2.891" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.773" Y="1.41" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAABAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>TrabalhaEm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Empregado" />
+      <Property Name="Projeto" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
