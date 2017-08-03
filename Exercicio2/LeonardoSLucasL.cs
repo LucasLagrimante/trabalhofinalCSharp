@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercicio2
 {
-    class Program
+    class LeonardoSLucasL
     {
         static Empresa GerarDados()
         {
@@ -231,20 +231,61 @@ namespace Exercicio2
 
             //j.	Obter códigos de empregados que trabalham mais de 10 horas em algum projeto. O resultado da consulta não deve ter repetições de códigos de empregados.
             Console.WriteLine("\n\nLetra J:");
+            var exJ = from trabalhaEm in empresa.Trabalhos
+                      orderby trabalhaEm.Empregado.IDEmp
+                      where trabalhaEm.Horas > 10
+                      group trabalhaEm by trabalhaEm.Empregado.IDEmp;
 
-            
+            foreach (var x in exJ)
+            {
+                Console.WriteLine("Código: " + x.Key);
+            }
+
             //k.Obter a quantidade de empregados pertencentes ao departamento 4.Dica: consulte funções agregadas do SQL.
             Console.WriteLine("\n\nLetra K:");
-            
-            //l.	Obter, a partir da tabela TrabalhaEm, os números mínimo, máximo e médio de horas trabalhadas por empregados em cada projeto. O resultado deve possuir 4 colunas nomeadas: projeto, minimo, maximo e media.
+            var exK = from empregado in empresa.Empregados
+                      where empregado.Departamento.IDDepto == 4
+                      select empregado;
+
+            Console.WriteLine("Soma: " + exK.Count());
+
+
+            //l.	Obter, a partir da tabela TrabalhaEm, os números mínimo, máximo e médio de horas trabalhadas por empregados em cada projeto.
+            //O resultado deve possuir 4 colunas nomeadas: projeto, minimo, maximo e media.
             Console.WriteLine("\n\nLetra L:");
-            
+            var exL = from trabalhaEm in empresa.Trabalhos
+                      orderby trabalhaEm.Projeto.IDProj
+                      group trabalhaEm by trabalhaEm.Projeto.IDProj into x
+                      select new { projeto = x.Key, minimo = x.Select(c=> c.Horas).Min(), maximo = x.Select(c => c.Horas).Max(), media = x.Select(c => c.Horas).Average()};
+
+            foreach (var x in exL)
+            {
+                Console.WriteLine("Projeto: " + x.projeto + " Min: "+x.minimo+" Max: "+x.maximo+" Media: "+x.media);
+            }
+
             //m.	Obter os códigos de projetos cuja média de horas trabalhadas seja maior que 20.
             Console.WriteLine("\n\nLetra M:");
-            
+            var exM = from trabalhaEm in empresa.Trabalhos
+                      group trabalhaEm by trabalhaEm.Projeto.IDProj into x
+                      where x.Select(c => c.Horas).Average() > 20
+                      select x.Key;
+
+            foreach (var x in exM)
+            {
+                Console.WriteLine("Projeto: " + x);
+            }
+
             //n.Obter os nomes de projetos correspondentes à consulta anterior.
             Console.WriteLine("\n\nLetra N:");
-            
+            var exN = from trabalhaEm in empresa.Trabalhos
+                      group trabalhaEm by trabalhaEm.Projeto.Titulo into x
+                      where x.Select(c => c.Horas).Average() > 20
+                      select x.Key;
+
+            foreach (var x in exN)
+            {
+                Console.WriteLine("Projeto: " + x);
+            }
         }
     }
 }
