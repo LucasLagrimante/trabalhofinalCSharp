@@ -20,3 +20,9 @@ C:\Users\lukin\Source\Repos\trabalhofinalc\Exercicio2\bin\Debug\Exercicio2.pdb
 C:\Users\lukin\Source\Repos\trabalhofinalc\Exercicio2\obj\Debug\Exercicio2.csprojResolveAssemblyReference.cache
 C:\Users\lukin\Source\Repos\trabalhofinalc\Exercicio2\obj\Debug\Exercicio2.exe
 C:\Users\lukin\Source\Repos\trabalhofinalc\Exercicio2\obj\Debug\Exercicio2.pdb
+C:\Users\Aluno\Source\Repos\trabalhofinalc\Exercicio2\bin\Debug\Exercicio2.exe.config
+C:\Users\Aluno\Source\Repos\trabalhofinalc\Exercicio2\obj\Debug\Exercicio2.exe
+C:\Users\Aluno\Source\Repos\trabalhofinalc\Exercicio2\obj\Debug\Exercicio2.pdb
+C:\Users\Aluno\Source\Repos\trabalhofinalc\Exercicio2\bin\Debug\Exercicio2.exe
+C:\Users\Aluno\Source\Repos\trabalhofinalc\Exercicio2\bin\Debug\Exercicio2.pdb
+C:\Users\Aluno\Source\Repos\trabalhofinalc\Exercicio2\obj\Debug\Exercicio2.csprojResolveAssemblyReference.cache

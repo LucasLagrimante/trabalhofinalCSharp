@@ -231,14 +231,14 @@ namespace Exercicio2
 
             //j.	Obter códigos de empregados que trabalham mais de 10 horas em algum projeto. O resultado da consulta não deve ter repetições de códigos de empregados.
             Console.WriteLine("\n\nLetra J:");
-            var exJ = from trabalhaEm in empresa.Trabalhos
+            var exJ = (from trabalhaEm in empresa.Trabalhos
                       orderby trabalhaEm.Empregado.IDEmp
                       where trabalhaEm.Horas > 10
-                      group trabalhaEm by trabalhaEm.Empregado.IDEmp;
+                      select trabalhaEm.Empregado.IDEmp).Distinct();
 
             foreach (var x in exJ)
             {
-                Console.WriteLine("Código: " + x.Key);
+                Console.WriteLine("Código: " + x);
             }
 
             //k.Obter a quantidade de empregados pertencentes ao departamento 4.Dica: consulte funções agregadas do SQL.
@@ -247,7 +247,7 @@ namespace Exercicio2
                       where empregado.Departamento.IDDepto == 4
                       select empregado;
 
-            Console.WriteLine("Soma: " + exK.Count());
+            Console.WriteLine("Quantidade: " + exK.Count());
 
 
             //l.	Obter, a partir da tabela TrabalhaEm, os números mínimo, máximo e médio de horas trabalhadas por empregados em cada projeto.
